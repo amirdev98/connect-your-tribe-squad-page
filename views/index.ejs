@@ -1,0 +1,33 @@
+<%- include('./partials/head') %>
+
+<h1><%= squad.name %></h1>
+<section class="squad">
+  <a class="squad1" href="/?squad=squad-a-2022">Squad A</a>
+  <a class="squad2" href="/?squad=squad-b-2022">Squad B</a>
+  <a class="squad3" href="/?squad=squat-c-2022">Squad C</a>
+</section>
+<!-- Hier komen de members -->
+
+<section>
+  <% squad.members.forEach(member => { %>
+
+  <a href="/member?slug=<%= member.slug %>">
+    <% if (member.avatar) { %>
+    <img
+      class="img-avatar"
+      src="<%= member.avatar %>"
+      alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
+    />
+    <% }else{ %>
+    <img
+      class="img-avatar"
+      src="/placeholder.jpg"
+      alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
+    />
+    <% } %>
+  </a>
+
+  <% }) %>
+</section>
+
+<%- include('./partials/foot') %>

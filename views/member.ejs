@@ -1,0 +1,6 @@
+<%- include('./partials/head') %>
+
+<h1><%= member.name %> <%= member.surname %></h1>
+<h2><%= member.role %></h2>
+<p><%= member.bio.html %></p>
+<a> /member?slug=<%= member.website %></a>

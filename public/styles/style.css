@@ -1,0 +1,71 @@
+.squad {
+  padding: 2rem;
+}
+body {
+  background-color: bisque;
+}
+.squad {
+  display: flex;
+  fl
+}
+
+h1 {
+  font-size: clamp(3rem, 1rem + 10vw, 5rem);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 150px;
+  padding: 2rem;
+}
+
+section img {
+  width: 140px;
+}
+
+.img-squad-c {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-avatar {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+}
+
+@media (min-width: 40rem) {
+  .img-avatar {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+@media (min-width: 50rem) {
+  .img-avatar {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+
+@media (min-width: 75rem) {
+  .img-avatar {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
