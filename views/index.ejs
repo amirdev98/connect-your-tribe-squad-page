@@ -12,7 +12,7 @@
   <% squad.members.forEach(member => { %>
 
   <a href="/member?slug=<%= member.slug %>">
-    <% if (member.avatar) { %>
+    <% if (member.avatar !== "null" && member.avatar && !member.avatar.includes("[")) { %>
     <img
       class="img-avatar"
       src="<%= member.avatar %>"
@@ -21,7 +21,7 @@
     <% }else{ %>
     <img
       class="img-avatar"
-      src="/placeholder.jpg"
+      src="https://via.placeholder.com/150"
       alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
     />
     <% } %>

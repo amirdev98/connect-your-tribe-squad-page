@@ -14,12 +14,13 @@ h1 {
 }
 
 section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
   grid-column-gap: 1rem;
   grid-row-gap: 150px;
   padding: 2rem;
+  flex-wrAP: wrap;
 }
 
 section img {
@@ -27,17 +28,17 @@ section img {
 }
 
 .img-squad-c {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .img-avatar {
-  border-radius: 50%;
+  border-radius: 60%;
   aspect-ratio: 1;
   display: flex;
 }
 
-@media (min-width: 40rem) {
+/* @media (min-width: 40rem) {
   .img-avatar {
     width: 100%;
     height: auto;
@@ -46,8 +47,8 @@ section img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 1fr);
   }
-}
-@media (min-width: 50rem) {
+} */
+/* @media (min-width: 50rem) {
   .img-avatar {
     width: 100%;
     height: auto;
@@ -57,8 +58,8 @@ section img {
     grid-template-rows: repeat(10, 1fr);
   }
 }
-
-@media (min-width: 75rem) {
+ */
+/* @media (min-width: 75rem) {
   .img-avatar {
     width: 100%;
     height: auto;
@@ -68,4 +69,16 @@ section img {
     grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 2rem;
   }
+}
+ */
+
+section > a {
+    flex: 1 1 20em;
+    display: flex;
+    justify-content: center;
+}
+
+section > a > img {
+    height: 20em;
+    width: 20em;
 }
