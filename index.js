@@ -35,9 +35,10 @@ app.get('/member', (request, response) => {
   })
 })
 
-// app.get('/members', (request, response) => {
+
+app.get('/members', (request, response) => {
 //   response.send('Joepie!!')
-// })
+})
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)

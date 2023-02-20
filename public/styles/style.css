@@ -2,15 +2,20 @@
   padding: 2rem;
 }
 body {
-  background-color: bisque;
+  background-color: rgb(227, 184, 139);
 }
 .squad {
   display: flex;
-  fl
 }
 
 h1 {
   font-size: clamp(3rem, 1rem + 10vw, 5rem);
+}
+
+.member__sur--name{
+  font-weight: 400 bold;
+  margin: auto 0;
+
 }
 
 section {
@@ -37,6 +42,27 @@ section img {
   aspect-ratio: 1;
   display: flex;
 }
+
+section > a {
+    flex: 1 1 20em;
+    display: flex;
+    justify-content: center;
+}
+
+section > a > img {
+    height: 20em;
+    width: 20em;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* @media (min-width: 40rem) {
   .img-avatar {
@@ -71,14 +97,3 @@ section img {
   }
 }
  */
-
-section > a {
-    flex: 1 1 20em;
-    display: flex;
-    justify-content: center;
-}
-
-section > a > img {
-    height: 20em;
-    width: 20em;
-}
