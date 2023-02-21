@@ -1,6 +1,12 @@
 <%- include('./partials/head') %>
-
-<h1><%= member.name %> <%= member.surname %></h1>
-<h2><%= member.role %></h2>
+<img
+      class="img-avatar-member-page"
+      src="<%= member.avatar %>"
+      alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
+    />
+<h2><%= member.name %> <%= member.surname %></h2>
+<h3><%= member.role %></h3>
 <p><%= member.bio.html %></p>
 <a> /member?slug=<%= member.website %></a>
+
+    

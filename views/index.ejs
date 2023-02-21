@@ -1,17 +1,13 @@
 <%- include('./partials/head') %>
 
-<h1><%= squad.name %></h1>
-<section class="squad">
-  <a class="squad1" href="/?squad=squad-a-2022">Squad A</a>
-  <a class="squad2" href="/?squad=squad-b-2022">Squad B</a>
-  <a class="squad3" href="/?squad=squat-c-2022">Squad C</a>
-</section>
+<h2><%= squad.name %></h2>
+
 <!-- Hier komen de members -->
 
 <section>
   <% squad.members.forEach(member => { %>
 
-  <a href="/member?slug=<%= member.slug %>">
+  <a class"" href="/member?slug=<%= member.slug %>">
     <% if (member.avatar !== "null" && member.avatar && !member.avatar.includes("[")) { %>
     <img
       class="img-avatar"
@@ -25,9 +21,9 @@
       alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
     />
     <% } %>
-    <div class="member__sur--name">
+    <p class="member__sur--name">
     <%= member.name %>
-    </div> 
+    </p>
   </a>
 
   <% }) %>
