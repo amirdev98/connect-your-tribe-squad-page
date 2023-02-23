@@ -1,23 +1,65 @@
+:root {
+  --white: #ffffff;
+  --lightblue:  rgb(9, 196, 196);
+  
+  --dark-grey: #30343f;
+}
+
 *{
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
+ h1{
+  font-family: 'Roboto', sans-serif;
+ }
+
+
+h3{
+  font-size: 2rem;
+  color: rgb(53, 8, 93);
+  text-align: center; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-top: 5rem;
+}
+p{
+font-size: 1rem;
+color: rgb(53, 8, 93);
+text-align: center; 
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+margin-top: 5rem;
+
+}
+
+.visite-kaart{
+  position:sticky;
+  font-size: 1rem;
+color: rgb(53, 8, 93);
+text-align: center; 
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+margin-top: 5rem;
+margin-left: 5rem;
+
+}
+
 
 .squad {
   padding: 2rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
  
-}
-.squad {
-  display: flex;
 }
 
 nav{
   display: flex;
   justify-content: flex-end;
-  background-color: rgb(9, 196, 196);
+  background-color:var(--lightblue);
   color: rgb(0, 0, 0);
   height: 8rem;
 }
@@ -47,7 +89,6 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-top: 5rem;
-
 }
 
 .member__sur--name {
@@ -72,7 +113,7 @@ section {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: rgb(53, 8, 93);
+  color:rgb(53, 8, 93); 
   text-decoration: none;
 }
 
@@ -95,6 +136,8 @@ section img {
   align-items: center;
   width: 100%;
   height: auto;
+  border: 4px solid var(--lightblue);
+  
 }
 
 @media (min-width: 40rem) {
@@ -120,10 +163,12 @@ section img {
 
 @media (min-width: 75rem) {
   .img-avatar {
-    width: 100%;
     height: auto;
+    width: 100%;
   }
+
   section {
+  
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-column-gap: 2rem;
@@ -132,32 +177,27 @@ section img {
 
 a {
   text-decoration: none;
-  
-  
 }
-
-.img-avatar-member-page{
   
-  aspect-ratio: 1;
+.img-avatar-member-page{
+
+  aspect-ratio:1;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1000;
-  height: auto;
+  height: 1000;
   border-radius: 60%;
   margin: 0 auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-  border: 3px solid rgb(53, 8, 93);
+  border: 4px solid var(--lightblue);
   padding: 10px;
   margin-top: 2rem;
+
   
 }
-
-
-
 
 
 
