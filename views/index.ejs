@@ -7,26 +7,25 @@
 <section>
   <% squad.members.forEach(member => { %>
 
-  <a class"" href="/member?slug=<%= member.slug %>">
-    <% if (member.avatar !== "null" && member.avatar && !member.avatar.includes("[")) { %>
-    <img
-      class="img-avatar"
-      src="<%= member.avatar %>"
-      alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
-    />
-    <% }else{ %>
-    <img
-      class="img-avatar"
-      src="https://via.placeholder.com/150"
-      alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
-    />
-    <% } %>
-    <p class="member__sur--name">
-    <%= member.name %>
-    </p>
-  </a>
-
+    <a href="/member?slug=<%= member.slug %>">
+      <% if (member.avatar !== "null" && member.avatar &&
+      !member.avatar.includes("[")) { %>
+      <img
+        class="img-avatar"
+        src="<%= member.avatar %>"
+        alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
+      />
+      <% }else{ %>
+      <img
+        class="img-avatar"
+        src="https://via.placeholder.com/150"
+        alt="<%= member.name %> <%= member.prefix %> <%= member.surname %>"
+      />
+      <% } %>
+      <p class="member__sur--name"><%= member.name %></p>
+    </a>
   <% }) %>
 </section>
 
 <%- include('./partials/foot') %>
+  

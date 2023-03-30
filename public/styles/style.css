@@ -49,8 +49,19 @@ margin-left: 5rem;
 .squad {
   padding: 2rem;
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
+
+#slider {
+  
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+
+
+
+
 body {
   background-color: var(--white);
  
@@ -201,7 +212,15 @@ a {
 
 
 
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
 
+  to {
+    transform: translateX(100%);
+  }
+}
 
 
 
