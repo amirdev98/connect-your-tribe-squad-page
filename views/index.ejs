@@ -5,9 +5,11 @@
 <!-- Hier komen de members -->
 
 <section>
+  <!-- Dit is een loop, voor alle members-->
   <% squad.members.forEach(member => { %>
 
     <a href="/member?slug=<%= member.slug %>">
+      <!-- Hier check ik of er een avatar is. Zo niet, dan een placeholder-->
       <% if (member.avatar !== "null" && member.avatar &&
       !member.avatar.includes("[")) { %>
       <img

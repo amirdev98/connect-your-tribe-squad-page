@@ -24,6 +24,7 @@ app.get('/', (request, response) => {
   })
 })
 
+// Maak een route voor de member pagina
 app.get('/member', (request, response) => {
 
   let slug = request.query.slug
